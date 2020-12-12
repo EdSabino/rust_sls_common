@@ -1,10 +1,11 @@
 use serde_json::Value;
 use serde::Deserialize;
 use mongodb::{Client, options::ClientOptions};
-use std::error::Error;
 use std::env;
 
-pub async fn create_client() -> Result<Client, Box<dyn Error>> {
+pub type Error = Box<dyn std::error::Error + Sync + Send + 'static>;
+
+pub async fn create_client() -> Result<Client, Error> {
     let client_options = ClientOptions::parse(&env::var("MONGODBENDPOINT")?).await?;
     let client = Client::with_options(client_options)?;
     Ok(client)
