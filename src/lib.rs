@@ -13,11 +13,11 @@ pub async fn create_client() -> Result<Client, Box<dyn Error>> {
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 pub struct Event {
-    resource: String,
-    path: String,
-    http_method: String,
-    query_string_parameters: Value,
-    body: Value,
+    pub resource: String,
+    pub path: String,
+    pub http_method: String,
+    pub query_string_parameters: Value,
+    pub body: Value,
 }
 
 #[cfg(test)]
