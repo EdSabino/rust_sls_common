@@ -1,6 +1,6 @@
 [package]
 name = "rust_sls_common"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Eduardo Sabino <eduardo@amo.delivery>"]
 edition = "2018"
 

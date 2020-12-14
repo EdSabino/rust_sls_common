@@ -1,3 +1,5 @@
+pub mod generic_error;
+
 use serde_json::Value;
 use serde::Deserialize;
 use mongodb::{Client, options::ClientOptions};
