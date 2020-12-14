@@ -1264,6 +1264,7 @@ dependencies = [
 name = "rust_sls_common"
 version = "1.0.0"
 dependencies = [
+ "chrono",
  "mongodb",
  "serde",
  "serde_json",

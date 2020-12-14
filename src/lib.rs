@@ -1,4 +1,5 @@
 pub mod generic_error;
+pub mod serde_date;
 
 use serde_json::Value;
 use serde::Deserialize;
