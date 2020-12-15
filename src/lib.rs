@@ -20,12 +20,9 @@ pub struct Event {
     pub resource: String,
     pub path: String,
     pub http_method: String,
-    pub query_string_parameters: Value,
-    pub body: Value,
-}
-
-pub trait Mock {
-    fn mock() -> Self;
+    pub query_string_parameters: Option<Value>,
+    pub path_arameters: Option<Value>,
+    pub body: Option<Value>,
 }
 
 #[cfg(test)]
