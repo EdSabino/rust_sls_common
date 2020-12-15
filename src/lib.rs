@@ -24,10 +24,10 @@ pub struct Event {
     pub body: Value,
 }
 
-
 pub trait Mock {
     fn mock() -> Self;
 }
+
 #[cfg(test)]
 mod tests {
     #[test]
