@@ -21,7 +21,7 @@ pub struct Event {
     pub path: String,
     pub http_method: String,
     pub query_string_parameters: Option<Value>,
-    pub path_arameters: Option<Value>,
+    pub path_parameters: Option<Value>,
     pub body: Option<Value>,
 }
 
